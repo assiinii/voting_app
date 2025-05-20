@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription Électeur</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        table {
+            background-color: #fff;
+            padding: 20px 30px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            animation: fadeSlideIn 1s ease-out;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 5px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #3e8e41;
+        }
+
+        /* Animation CSS */
+        @keyframes fadeSlideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        button:active {
+    transform: scale(0.97);
+    box-shadow: 0 0 0 transparent;
+}
+    </style>
+   
+
+</head>
+<body>
+    <button onclick="window.location.href='index.html'">Retour à l'accueil</button>
+
+    <form action="inscription.php" method="POST">
+        <fieldset><legend><h1>INSCRIPTION</h1></legend>
+    <label>Prénom :</label><br>
+    <input type="text" name="prenom" required><br>
+
+    <label>Nom :</label><br>
+    <input type="text" name="nom" required><br>
+
+    <label>Email :</label><br>
+    <input type="email" name="email" required><br>
+
+    <label>Date de naissance :</label><br>
+    <input type="date" name="date_naissance" required><br>
+
+    <label>Numéro CNI :</label><br>
+    <input type="text" name="num_cni" required><br>
+
+    <label>Adresse :</label><br>
+    <input type="text" name="adresse"><br><br>
+
+    <button type="submit">S’inscrire</button></fieldset>
+</form>
+
+    </body>
+    </html>
+ 

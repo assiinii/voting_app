@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Vote Électeur</title>
+</head>
+<body>
+  <h2>Formulaire de vote</h2>
+  <form method="POST" action="vote.php">
+    <label>Nom :</label><br>
+    <input type="text" name="nom" required><br><br>
+
+    <label>Numéro de carte électorale :</label><br>
+    <input type="text" name="carte" required><br><br>
+
+    <label>Choix du parti :</label><br>
+    <select name="parti" required>
+      <option value="1">RDPC</option>
+      <option value="2">SDF</option>
+      <option value="3">MRC</option>
+      <option value="4">UPC</option>
+      <option value="5">UNDP</option>
+      <option value="6">UDC</option>
+      <option value="7">FSNC</option>
+      <option value="8">PCRN</option>
+    </select><br><br>
+
+    <input type="submit" value="Voter">
+  </form>
+</body>
+</html>
